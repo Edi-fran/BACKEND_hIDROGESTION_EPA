@@ -11,7 +11,7 @@
 
 **Sistema Comunitario de Gestión de Agua Potable**
 
-Proyecto completo con backend Flask + app móvil React Native + dashboard web + módulo IoT con ESP32-S3 y caudalímetro YF-S201.
+Proyecto completo con backend Flask + app móvil React Native + dashboard web
 
 </div>
 
@@ -148,38 +148,8 @@ Escanea el QR con la app **Expo Go** en tu celular (Android/iOS).
 | expo-image-picker | ~17.0.10 | Fotos de evidencia |
 | @react-native-async-storage | 2.2.0 | Almacenamiento local JWT |
 
-### IoT
-| Componente | Versión | Uso |
-|---|---|---|
-| Arduino IDE | 2.3.8 | Entorno de desarrollo |
-| esp32 by Espressif | 3.3.7 | Soporte ESP32-S3 |
-| ArduinoJson | 6.x/7.x | Serialización JSON |
-| WiFi.h | Incluida | Conexión WiFi |
-| WebServer.h | Incluida | Servidor HTTP embebido |
-| HTTPClient.h | Incluida | POST de datos a Flask |
 
----
 
-## 📡 Módulo IoT — ESP32-S3 + YF-S201
-
-### Conexiones eléctricas
-### Configuración del microcontrolador
-```cpp
-const char* WIFI_SSID        = "TU_WIFI";
-const char* WIFI_PASSWORD    = "TU_PASSWORD";
-const char* FLASK_URL        = "http://TU_IP:5000/api/iot/lectura";
-const int   MEDIDOR_ID       = 3;
-const float PULSOS_POR_LITRO = 7.5;   // Calibración YF-S201
-// Intervalo de envío: cada 5 minutos (300,000 ms)
-```
-
-### Endpoints del ESP32 (servidor web embebido)
-
-| Método | URL | Descripción |
-|---|---|---|
-| `GET` | `http://ESP32_IP/` | Panel HTML en tiempo real |
-| `GET` | `http://ESP32_IP/datos` | JSON con telemetría completa |
-| `POST` | `http://ESP32_IP/reset` | Reiniciar contadores |
 
 ### Endpoints IoT en el backend
 
@@ -239,8 +209,7 @@ SQLite con **33 entidades** gestionadas por SQLAlchemy:
 [![GitHub](https://img.shields.io/badge/GitHub-Edi--fran-181717?style=for-the-badge&logo=github)](https://github.com/Edi-fran)
 
 *Tecnólogo en Desarrollo de aplicaciones web*  
-*Universidad Estatal Amazónica — UEA*  
-*Puyo, Pastaza, Ecuador*
+*Universidad Especialidades Espiritu Santo (UESS*  
 
 </div>
 
@@ -250,19 +219,15 @@ SQLite con **33 entidades** gestionadas por SQLAlchemy:
 
 | Nombre | Rol |
 |---|---|
-| Edilson Francisco Guillín Carrión | Backend · IoT · App Móvil |
-| David Paul Guerra Delgado | Frontend · Diseño UI |
-| Luis Eduardo Argudo Guzmán | Testing · Documentación |
+| Edilson Francisco Guillín Carrión | Backend  · App Móvil |
 
-**Docente:** Ing. Julio César Hurtado Jerves  
-**Asignatura:** 2526 - Aplicaciones Móviles (B) — UEA-L-UFPTI-008-B  
-**Período:** 2025 – 2026 · Universidad Estatal Amazónica
+
 
 ---
 
 ## 📄 Licencia
 
-Proyecto académico desarrollado para la Universidad Estatal Amazónica.
+Proyecto académico 
 
 ---
 
