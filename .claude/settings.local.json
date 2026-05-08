@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(del \"C:\\\\Users\\\\nexus\\\\Documents\\\\superman 2\\\\hidrogestion_frontend\\\\src\\\\screens\\\\common\\\\Iotscreen.tsx\")",
+      "PowerShell(robocopy $src $dst /E /IS /IT /NFL /NDL /NJH /NJS)",
+      "PowerShell($src = \"C:\\\\Users\\\\nexus\\\\Documents\\\\superman 2\\\\backend\\\\.claude\\\\worktrees\\\\zealous-solomon-808746\\\\app\")",
+      "PowerShell($dst = \"C:\\\\Users\\\\nexus\\\\Documents\\\\superman 2\\\\backend\\\\app\")"
+    ]
+  }
+}
